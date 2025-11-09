@@ -346,6 +346,57 @@
             font-weight: 500;
             color: white;
         }
+
+        /* Tracklist */
+        .tracklist {
+            width: 100%;
+            max-width: 46rem;
+        }
+
+        .tracklist-container {
+            background-color: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(12px);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .tracklist-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+
+        .tracklist-items {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        .tracklist-item {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            gap: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .tracklist-composer {
+            font-weight: 600;
+            color: white;
+            white-space: nowrap;
+        }
+
+        .tracklist-tracks {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            font-size: 0.875rem;
+        }
+
+        .tracklist-work-title {
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -375,6 +426,69 @@
         <div class="title-section">
             <h1>Crossing the Darkness: Ukrainian Music for Saxophone and Piano</h1>
             <p>Roman Fotuima & Daria Shutko duo</p>
+        </div>
+
+        <!-- Tracklist -->
+        <div class="tracklist">
+            <div class="tracklist-container">
+                <h2 class="tracklist-title">TRACKLIST:</h2>
+                
+                <div class="tracklist-items">
+                    <!-- Track 1-3 -->
+                    <div class="tracklist-item">
+                        <div class="tracklist-composer">YURII ISHCHENKO</div>
+                        <div class="tracklist-tracks">
+                            <div class="tracklist-work-title">Sonata for Alto Saxophone and Piano</div>
+                            <div>1) Mvt. 1: Allegretto Molto</div>
+                            <div>2) Mvt. 2: Andante Sostenuto, Thema Con Variazioni</div>
+                            <div>3) Mvt. 3: Andante, Doloroso</div>
+                        </div>
+                    </div>
+
+                    <!-- Track 4 -->
+                    <div class="tracklist-item">
+                        <div class="tracklist-composer">VOLODYMYR RUNCHAK</div>
+                        <div class="tracklist-tracks">
+                            <div>4) Recalling a Forgotten Melody</div>
+                        </div>
+                    </div>
+
+                    <!-- Track 5 -->
+                    <div class="tracklist-item">
+                        <div class="tracklist-composer">YAROSLAV VERESHCHAHIN</div>
+                        <div class="tracklist-tracks">
+                            <div>5) Sonatina-Collage for Alto Saxophone and Piano</div>
+                        </div>
+                    </div>
+
+                    <!-- Track 6 -->
+                    <div class="tracklist-item">
+                        <div class="tracklist-composer">ZOLTAN ALMASHI</div>
+                        <div class="tracklist-tracks">
+                            <div>6) Elegy</div>
+                        </div>
+                    </div>
+
+                    <!-- Track 7-9 -->
+                    <div class="tracklist-item">
+                        <div class="tracklist-composer">ARTEM ROSHCHENKO</div>
+                        <div class="tracklist-tracks">
+                            <div class="tracklist-work-title">The Vanished Day Sketch</div>
+                            <div>7) Mvt.1: When the Dawn Comes</div>
+                            <div>8) Mvt.2: Overtaking the Wind</div>
+                            <div>9) Mvt.3: Blue Fields Twilight</div>
+                        </div>
+                    </div>
+
+                    <!-- Track 10 -->
+                    <div class="tracklist-item">
+                        <div class="tracklist-composer">SERGII LEONTIEV</div>
+                        <div class="tracklist-tracks">
+                            <div>10) Sonatina for Alto Saxophone and Piano</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Music service buttons -->
